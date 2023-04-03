@@ -1,0 +1,13 @@
+
+<!--Style Binding with default value-->
+
+<h1 [style.color]="'purple'">Style with default value red </h1>
+<h1 [style.color]="'red'">Style with default value in single qoutes ' '</h1>
+
+<!-- Style value  from ts file -->
+<h1 [style.color]="MyStyle" >Style Binding value from ts file</h1>
+<h1 [style.color]="blueStyle">NG G C Component</h1>
+
+
+<!--Conditional Style Binding-->
+<h1 [style.color]="IsSet ? 'red' : 'purple'" >Conditional Style Binding</h1>

@@ -1,0 +1,35 @@
+<h1>Durgesh Pawar</h1>
+
+<!-- Value-->
+<h1 [style.color]="'red'" >Durgesh Pawar</h1>
+<h1 [style.color]="'green'" >Durgesh Pawar</h1>
+
+<!-- Parameter Style Binding-->
+<h1 [style.color]="MyColor" >Durgesh Pawar</h1>
+<h1 [style.color]="FavColor" >Durgesh Pawar</h1>
+
+<!-- Conditionl Style Binding-->
+<h1 [style.color]="IsSet ? 'green': 'red' " >Durgesh Pawar</h1>
+
+
+<!--Demonstration of Class Bindding-->
+<h1>Demonstration of Class Bindding</h1>
+
+<h1 class="success">Demonstration of Class Bindding</h1>
+
+<h1 class="failure">Demonstration of Class Bindding</h1>
+
+<!-- Class Variable with Css-->
+<h1 [class]="MyClass">Class Variable with Css</h1>
+
+<h1 [class.success]="IsSet">Class Variable with Css</h1>
+
+<!--event binding-->
+
+<h1>Event Binding</h1>
+
+<button (click)="MyAction()">submit</button>
+<h1>{{data}}</h1>
+
+<!--Reference Which Event Performed $event __> metadata of event-->
+<button (click)="MyActionNew($event)" > NewButtton</button>
